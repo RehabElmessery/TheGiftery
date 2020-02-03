@@ -1,0 +1,16 @@
+
+.col-md-4
+{
+display: none;
+}
+
+section
+{
+    width: 3px;
+    height: 2px;
+    background-color: cadetblue;
+}
+section h2
+{
+    display: none;
+}
