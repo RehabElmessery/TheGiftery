@@ -1,12 +1,18 @@
+*{
+    box-sizing: border-box;
+}
 body
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#service-tool{
+    height:350px;
+    margin-bottom: 20px;
+}
 .main-tool{
     width: 100%;
-    height: 200px;
-    
+    height: 250px;
     margin-left: -15px;
 margin-right: -15px;
 position: relative;
@@ -14,9 +20,26 @@ background: url(../images/blue.jfif);
 background-color: rgba(0,0,0,0.1);
 background-size: cover;
 }
+.service-icon{
+    height:auto;
+    width: 100px;
+    font-size: 2rem;
+    line-height: 1rem;
+    margin:  auto;  
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+.icon-p{
+    text-align: center;
+    padding: 5px;
+    
+    
+}
 .tool-text{
     width: 100%;
-    height:50% ;
+    
     text-align: center;
     
 }
@@ -37,12 +60,13 @@ padding-top: 30px;
    margin-left: 10%;
    box-sizing: border-box;
    box-shadow: 0 10px 40px rgba(0,0,0,.07);
-    
-padding-top: 50px !important;
-padding-bottom: 50px !important;
-background-color:#ffffff !important;
+   height: auto;
    
-
+padding: 2rem !important;
+background-color:#ffffff !important;
+display: flex;
+text-align: center;
+justify-content: center;
 }
 .img-service{
     margin: auto;
@@ -58,4 +82,38 @@ background-color:#ffffff !important;
         margin-top: 15px;
         margin-bottom: 3px;
         font-weight: 700;
+}
+.featured{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    
+}
+.featured  img{
+    border: 1px solid #f4f4f4;
+}
+.featured ul{
+    margin-top: 40px;
+}
+.featured ul li{
+    color: #08526d;
+    border: 2px solid #08526d;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.featured ul li.active ,
+ .featured ul li:hover{                      
+    background-color: #ec1c23;
+    border: 2px solid #ec1c23;
+    color: #fff;
+
+}
+.clear{
+    clear: both;
+}
+.featured-text{
+    text-align: left;
+    padding: 3px;
+    line-height: 1rem;
 }
