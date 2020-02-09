@@ -1,3 +1,66 @@
+/* #####################################Start Main Page######################################### */
+//---------------------------------------Start top-bar
+/* $(".fixed-icone-toggle").click(function() {
+    $(".top-bar").slideToggle();
+    $(".fixed-icone-toggle i").toggleClass("fa-chevron-up fa-chevron-down");
+});
+ */
+//---------------------------------------Start Navbar
+var secondTobBarHeight = $(".second-tob-bar").innerHeight();
+
+$(window).on("scroll", function() {
+
+    if ($(window).scrollTop() > 40) {
+        $(".navbar,.second-tob-bar").addClass("fixed-top");
+
+    } else {
+        $(".navbar,.second-tob-bar").removeClass("fixed-top");
+    }
+});
+
+//---------------------------------------DISPLAY SEARCH
+/* $(".topbar-toggle .fa-search").click(function() {
+    $('.drop-menu').fadeIn()
+}, (function() {
+    $(this).animate({
+        width: '100'
+    }, 3000);
+}));
+
+
+$(function() {
+    $('html').click(function(e) {
+        if (e.target.id !== 'link') {
+            $('.drop-menu').fadeOut();
+            $(this).animate({
+                width: '0'
+            }, 3000);
+        }
+    });
+});*/
+
+/* ##################################### End Main Page ######################################### */
+
+/* #####################################Start Product Page######################################### */
+
+//---------------------------------------Shuffle Section
+
+ $('.showSingle').click(function() {
+         $(this).addClass("active").siblings().removeClass("active");
+     })
+/* msh 3rfa homa msh 3'len 3'er 3 awl w7da leeh*/
+
+
+ $(function() {
+     $('.targetDiv').hide();
+     $('.targetDiv.active').show();
+     $('.showSingle').click(function() {
+         $('.targetDiv').hide();
+         $('#div' + $(this).attr('target')).show();
+     });
+ });
+
+//---------------------------------------ZOOM Section
 function imageZoom(imgID, resultID) {
     var img, lens, result, cx, cy;
     img = document.getElementById(imgID);
@@ -57,3 +120,5 @@ function imageZoom(imgID, resultID) {
   // Initiate zoom effect:
   imageZoom("myimage", "myresult");
   $(".togle").click(function(){$(".hidden")(5000)})
+
+/* #####################################End Product Page######################################### */
