@@ -393,7 +393,6 @@ justify-content: center;
         margin-bottom: 3px;
         font-weight: 700;
 }
-<<<<<<< HEAD
 .featured{
     width: 100%;
     height: auto;
@@ -428,15 +427,7 @@ justify-content: center;
     padding: 3px;
     line-height: 1rem;
 }
-=======
 
-/* -----------------------------------------------Start Service*/
-
-
-/* #####################################   Start Product Page   ######################################### */
-
-
-/* -----------------------------------------------Start Shuffle Section*/
 
 .shuffle-menu h2 {
     cursor: pointer;
@@ -573,11 +564,6 @@ justify-content: center;
         display: none;
     }
 }
-/* -----------------------------------------------End Shuffle Section*/
-
-
-
-
-
-
->>>>>>> 05c2ee28f7d7bf05a24824ebb28e417484ecda1d
+ .borderless{
+    border: none;
+}
